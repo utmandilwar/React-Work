@@ -8,18 +8,22 @@
 // }
 
 /*Second code: working with buttons*/
-// function Mybutton() {
-//   return <button>I'm a button , click me </button>;
-// }
+function Mybutton() {
+  function handleClick(){
+    alert("You clicked me");
+  }
+  return (<button onClick={handleClick}>I'm a button , click me </button>
+  );
+}
 
-// export default function App() {
-//   return (
-//     <div>
-//       <h1>Hello World!</h1>
-//       <Mybutton />
-//     </div>
-//   );
-// }
+export default function App() {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+      <Mybutton />
+    </div>
+  );
+}
 
 /*third code: importing image and adding css to it*/
 // const user = {
@@ -65,4 +69,5 @@
 //   ));
 //   return <ul>{listItems}</ul>;
 // }
+
 
